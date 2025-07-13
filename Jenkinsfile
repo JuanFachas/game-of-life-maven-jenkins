@@ -1,14 +1,13 @@
 pipeline {
     agent any
 
-    tools {
-        // Ajusta los nombres a los que tengas en "Global Tool Configuration"
-        maven 'Maven3-latest'
-        jdk 'JDK17'
-    }
+    // Elimina o comenta esto
+    // tools {
+    //     maven 'Maven3-latest'
+    //     jdk 'JDK17'
+    // }
 
     environment {
-        // Opcionalmente puedes pasar opciones extra a Maven
         MAVEN_OPTS = "-Dmaven.test.failure.ignore=false"
     }
 
